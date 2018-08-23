@@ -3,8 +3,8 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import StoryRouter from 'storybook-react-router';
 
-import Header from './Header';
+import About from './About';
 
-storiesOf('Header', module)
+storiesOf('About', module)
   .addDecorator(StoryRouter())
-  .add('default', () => <Header />);
+  .add('default', () => <About />);
