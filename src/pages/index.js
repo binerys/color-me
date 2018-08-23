@@ -1,14 +1,20 @@
 import React from 'react';
+import Swatch from '../components/Swatch';
+import About from '../components/About';
 import Link from 'gatsby-link';
 
+import styles from './index.module.scss';
+
 const IndexPage = () => (
-  <div className="content">
-    <h1>
-      Hi people <i className="fas fa-exclamation-circle" />
-    </h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+  <div className={styles.content}>
+    <div className="columns is-1">
+      <div className={"column is-three-fifths "+styles.valign}>
+        <About />
+      </div>
+      <div className="column">
+        <Swatch title="Pantone" color="#f6dbd8" colorName="Rose Water" />
+      </div>
+    </div>
   </div>
 );
 
